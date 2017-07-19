@@ -1,0 +1,31 @@
+.form-page__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+  width: 100%;
+	background-image: url(https://www.dropbox.com/s/p9xjyikeb8shlh2/bg8.jpg?dl=1);
+	background-attachment: fixed;
+	background-position: left bottom;
+	background-size: cover;
+}
+
+.form-page__form-wrapper {
+  max-width: 325px;
+  width: 100%;
+  border: 1px solid $very-light-grey;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+	margin: 200px;
+}
+
+.form-page__form-heading {
+  text-align: center;
+  font-size: 1em;
+  user-select: none;
+}
+
+.form-page__form-header {
+  padding: 1em;
+}

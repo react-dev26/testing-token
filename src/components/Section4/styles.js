@@ -1,0 +1,45 @@
+export default {
+  wrapper: {
+    padding: '7.5em 0 5.5em 0',
+    position: 'relative',
+    display: 'block',
+    margin: 0,
+    border: 0,
+    fontSize: '100%',
+    verticalAlign: 'baseline',
+    font: 'inherit',
+  },
+  container: {
+    margin: '0 auto',
+    width: '80em',
+    maxWidth: 'calc(100% - 6em)',
+  },
+  center: {
+    textAlign: 'center',
+  },
+  hr: {
+    border: 0,
+    borderBottom: 'solid 1px',
+    margin: '2em 0',
+    borderBottomColor: 'rgba(144, 144, 144, 0.25)',
+  },
+  h2: {
+    color: '#525252',
+    fontSize: '2em',
+    lineHeight: 1.5,
+    letterSpacing: '0.04em',
+    margin: '0 0 1.5em 0',
+    fontStyle: 'inherit',
+    fontVariantLigatures: 'inherit',
+    fontVariantCaps: 'inherit',
+    fontVariantNumeric: 'inherit',
+    fontWeight: 'inherit',
+    fontStretch: 'inherit',
+    lineHeight: 'inherit',
+    fontFamily: 'inherit',
+  },
+  p: {
+    margin: '0 0 2em 0',
+    color: '#757474',
+  },
+};

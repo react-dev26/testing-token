@@ -1,0 +1,72 @@
+export default {
+  container: {
+    width: '67%',
+    marginLeft: '6em',
+    display: 'block',
+  },
+  h2: {
+    color: '#333333',
+    fontSize: '2em',
+    lineHeight: 1.5,
+    letterSpacing: '0.04em',
+    margin: '0 0 1.5em 0',
+  },
+  h3: {
+    color: '#6eb792',
+    margin: '0 0 0.5em 0',
+    fontSize: '1.2em',
+    fontWeight: 400,
+    lineHeight: 1.5,
+    letterSpacing: '0.04em',
+  },
+  p: {
+    margin: '0 0 2em 0',
+    color: '#807d7d',
+  },
+  features: {
+    marginBottom: 0,
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  fa: {
+    borderTopWidth: 0,
+    borderColor: 'rgba(144, 144, 144, 0.25)',
+    borderStyle: 'solid',
+    borderRightWidth: 0,
+    borderBottomWidth: 0,
+    padding: '2.25em 0',
+    position: 'relative',
+    textDecoration: 'none',
+    display: 'block',
+    width: '36%',
+  },
+  faDiamond: {
+    borderLeftWidth: 0,
+    paddingLeft: '3.5em',
+    paddingRight: '3em',
+  },
+  faFileO: {
+    paddingLeft: '6.5em',
+    paddingRight: 0,
+  },
+  faClone: {
+    borderLeftWidth: 0,
+    paddingLeft: '3.5em',
+    paddingRight: '3em',
+  },
+  faEnvelopeO: {
+    paddingLeft: '6.5em',
+    paddingRight: 0,
+  },
+  i: {
+    color: '#6eb792',
+    position: 'absolute',
+    fontSize: '1.875em',
+    top: '1.1em',
+    left: 0,
+    fontFamily: 'FontAwesome',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    textTransform: 'none',
+  },
+};

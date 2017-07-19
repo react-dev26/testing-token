@@ -18,6 +18,7 @@ function config() {
   return merge([
     {
       context: PATHS.src,
+      devtool: 'source-map',
       entry: {
         app: ['./index.js'],
         vendor: [

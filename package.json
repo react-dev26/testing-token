@@ -7,7 +7,7 @@
   "author": "Ken Boyer <cool.dev206@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server $NODE_DEBUG_OPTION --config config/webpack/webpack.config.js",
+    "start": "node ./src/index.js",
     "test": "cross-env NODE_PATH=src NODE_ENV=test ava --concurrency 18",
     "test:watch": "npm run test -- --watch",
     "test:debug": "cross-env NODE_PATH=src NODE_ENV=test inspect node_modules/ava/profile.js",
@@ -17,7 +17,7 @@
     "test:coverage:report": "nyc report --reporter=html && opn coverage/index.html",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --config config/webpack/webpack.config.js --env.production",
     "postinstall": "webpack -p --config config/webpack/webpack.config.js --progress",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --env.production && mv dist/index.html dist/index.html && cp index.php dist/index.php && cp .htaccess dist/.htaccess",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --env.production && mv dist/index.html dist/index.html && cp .htaccess dist/.htaccess",
     "build:clean": "npm run test:clean && rimraf ./dist"
   },
   "ava": {
@@ -92,6 +92,7 @@
     "cross-env": "^3.2.4",
     "currency-symbol-map": "^3.1.0",
     "es6-promise": "^4.1.0",
+    "express": "^4.15.3",
     "html-webpack-plugin": "^2.28.0",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",

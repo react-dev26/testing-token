@@ -27,7 +27,6 @@ module.exports = function production() {
           },
           compress: {
             screw_ie8: true,
-            warnings; false,
           },
           comments: false,
         }),

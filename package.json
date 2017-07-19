@@ -7,7 +7,7 @@
   "author": "Ken Boyer <cool.dev206@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server $NODE_DEBUG_OPTION --config config/webpack/webpack.config.js && node ./src/index.js",
+    "start": "webpack-dev-server $NODE_DEBUG_OPTION --config config/webpack/webpack.config.js",
     "heroku-postbuild": "webpack -p --config config/webpack/webpack.config.js --progress",
     "test": "cross-env NODE_PATH=src NODE_ENV=test ava --concurrency 18",
     "test:watch": "npm run test -- --watch",

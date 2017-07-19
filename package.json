@@ -8,7 +8,6 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./src/index.js",
-    "heroku-postbuild": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --progress",
     "test": "cross-env NODE_PATH=src NODE_ENV=test ava --concurrency 18",
     "test:watch": "npm run test -- --watch",
     "test:debug": "cross-env NODE_PATH=src NODE_ENV=test inspect node_modules/ava/profile.js",

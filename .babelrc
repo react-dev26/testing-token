@@ -14,5 +14,12 @@
     "react-hot-loader/babel",
     "transform-decorators-legacy",
     "transform-runtime"
-  ]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
 }

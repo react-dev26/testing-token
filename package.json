@@ -85,6 +85,7 @@
   "dependencies": {
     "accounting": "^0.4.1",
     "autoprefixer": "^7.1.2",
+    "babel-plugin-transform-react-createelement-to-jsx": "^1.0.1",
     "babel-polyfill": "^6.23.0",
     "babel-register": "^6.23.0",
     "bcryptjs": "^2.4.3",

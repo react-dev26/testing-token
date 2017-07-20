@@ -8,9 +8,7 @@ module.exports = function development() {
       entry: {
         app: [
           'react-hot-loader/patch',
-          'webpack-hot-middleware/client',
         ],
-
       },
     },
     parts.shared(),

@@ -15,6 +15,7 @@
     "test:coverage": "nyc npm run test",
     "test:coverage:verify": "nyc check-coverage",
     "test:coverage:report": "nyc report --reporter=html && opn coverage/index.html",
+    "heroku-postbuild": "webpack -p --config config/webpack/webpack.config.js --progress",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --config config/webpack/webpack.config.js --env.production",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --env.production && mv dist/index.html dist/index.html && cp .htaccess dist/.htaccess",
     "build:clean": "npm run test:clean && rimraf ./dist"

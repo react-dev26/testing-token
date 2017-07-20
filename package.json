@@ -15,11 +15,11 @@
     "test:coverage": "nyc npm run test",
     "test:coverage:verify": "nyc check-coverage",
     "test:coverage:report": "nyc report --reporter=html && opn coverage/index.html",
-    "prod": "node server.js",
-    "postinstall": "npm run build",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --env.production && rimraf ./dist",
+    "clean": "rimraf ./dist ./build",
+    "build": "rimraf ./dist && webpack --config config/webpack/webpack.config.js --env.production",
     "deploy": "rimraf ./build && NODE_ENV=production webpack -p --config config/webpack/webpack.config.js",
-    "clean": "rimraf ./dist ./build"
+    "postinstall": "npm run build",
+    "prod": "node server.js"
   },
   "ava": {
     "require": [

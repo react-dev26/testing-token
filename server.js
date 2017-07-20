@@ -1,15 +1,10 @@
-const path = require('path')
-const express = require('express')
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = (process.env.PORT || 8080);
 
-module.exports = {
-  app: function () {
-    const app = express()
-    const indexPath = path.join(__dirname, './index.html')
-    const publicPath = express.static(path.join(__dirname, 'dist'))
-
-    app.use('/', publicPath)
-    app.get('/', function (_, res) { res.sendFile(indexPath) })
-
-    return app
-  }
-}
+app.use(express.static(path.join(__dirname, 'dist')));
+// Listen for requests
+const server = app.listen(port, () => {
+  console.log(`Magic happens on port ${server.address().port}`);
+});

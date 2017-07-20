@@ -18,6 +18,7 @@
     "prod": "node server.js",
     "postinstall": "npm run build",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack/webpack.config.js --env.production && rimraf ./dist",
+    "deploy": "rimraf ./build && NODE_ENV=production webpack -p --config config/webpack/webpack.config.js",
     "clean": "rimraf ./dist ./build"
   },
   "ava": {
